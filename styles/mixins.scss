@@ -9,3 +9,20 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin nav-links{
+    ul{
+        list-style: none;
+        li{
+            a{
+                color: white;
+                transition: .3s all ease;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                    color: $main;
+                }
+            }
+        }
+    }
+}

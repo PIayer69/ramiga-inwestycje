@@ -4,16 +4,22 @@
 
 
 .investments{
+    margin-top: 5rem;
     @include center;
     @include lg{
         flex-direction: column;
         margin-top: 2rem;
     }
-    margin-top: 5rem;
 
     .investment{
         @include lg{
             margin-bottom: 2rem;
+        }
+        width: 450px;
+        height: 500px;
+        @include sm{
+            width: 350px;
+            height: 450px;
         }
         color: white;
         margin: 0 3rem;
@@ -24,8 +30,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 450px;
-        height: 500px;
         overflow: hidden;
         img{
             width: 85%;
