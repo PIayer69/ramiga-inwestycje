@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #333333;
+  background-image: url("../images/bg.png");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.container nav img {
+  width: 150px;
+}
+@media screen and (max-width: 576px) {
+  .container nav img {
+    width: 120px;
+  }
+}
+.container nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .container nav ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container nav ul li {
+    font-size: 1.1rem;
+    margin: 0 2.5rem;
+  }
+}
+.container nav ul li a {
+  color: white;
+  transition: 0.3s all ease;
+  text-decoration: none;
+}
+.container nav ul li a:hover {
+  text-decoration: underline;
+  color: #DCAF6B;
+}
+.container nav .burger-menu {
+  cursor: pointer;
+}
+.container nav .burger-menu .bar {
+  background-color: white;
+  width: 20px;
+  height: 3px;
+  margin: 4px 0;
+}/*# sourceMappingURL=style.css.map */

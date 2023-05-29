@@ -1,0 +1,60 @@
+.investments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+@media screen and (max-width: 992px) {
+  .investments {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+.investments .investment {
+  color: white;
+  margin: 0 3rem;
+  padding-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  height: 500px;
+  overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .investments .investment {
+    margin-bottom: 2rem;
+  }
+}
+.investments .investment img {
+  width: 85%;
+  border-radius: 40px;
+}
+.investments .investment .name-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  flex-direction: column;
+}
+.investments .investment .name-address .name {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.investments .investment .name-address .address {
+  color: #DCAF6B;
+}
+.investments .investment .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DCAF6B;
+  color: black;
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+}/*# sourceMappingURL=invest.css.map */

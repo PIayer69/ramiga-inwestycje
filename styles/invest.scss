@@ -1,0 +1,57 @@
+@import "resp.scss";
+@import "colors.scss";
+@import "mixins.scss";
+
+
+.investments{
+    @include center;
+    @include lg{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    margin-top: 5rem;
+
+    .investment{
+        @include lg{
+            margin-bottom: 2rem;
+        }
+        color: white;
+        margin: 0 3rem;
+        padding-top: 2rem;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        height: 500px;
+        overflow: hidden;
+        img{
+            width: 85%;
+            border-radius: 40px;
+        }
+        .name-address{
+            @include center;
+            text-align: center;
+            padding: 1rem;
+            flex-direction: column;
+            .name{
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+            .address{
+                color: $main;
+            }
+        }
+        .info{
+            @include center;
+            background-color: $main;
+            color: black;
+            width: 100%;
+            padding: 1rem;
+            cursor: pointer;
+        }
+
+    }
+}
