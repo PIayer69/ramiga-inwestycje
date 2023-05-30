@@ -1,0 +1,108 @@
+@import "colors.scss";
+@import "resp.scss";
+@import "mixins.scss";
+
+.container{
+    .contact{
+        margin-top: 4rem;
+        width: 100%;
+        @include center;
+        .wrapper{
+            @include xl{
+                flex-direction: column;
+                align-items: center;
+            }
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            .form{
+                color: white;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                @include sm{
+                    width: 100%;
+                }
+
+                width: 500px;
+
+                .title{
+                    font-size: 1.8rem;
+                    text-decoration: underline;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+
+                .name{
+                    margin-top: 1rem;
+                }
+
+                .field{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: .9rem;
+                    border: 0;
+                    outline: 0;
+                    padding: .3rem .6rem;
+                    background-color: rgba(0,0,0,0.7);
+                    border-radius: 10px;
+                    color: $main;
+                }
+
+                textarea{
+                    resize: none;
+                    height: 150px;
+                }
+
+                input[type="submit"]{
+                    margin-top: 1rem;
+                    color: $main;
+                    outline: $main 2px solid;
+                    padding: .6rem 1.8rem;
+                    border-radius: 10px;
+                    background-color: rgba(0,0,0,0.6);
+                    font-weight: 600;
+                    border: 0;
+                    transition: .3s all ease;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: $main;
+                        color: black;
+                    }
+                }
+            }
+
+            .info{
+                @include xl{
+                    margin-top: 3rem;
+                    align-items: center;
+                }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                color: white;
+
+                img{
+                    @include sm{
+                        width: 200px;
+                    }
+                    width: 400px;
+                    margin-bottom: 2rem;
+                }
+
+                .desc{
+                    @include xl{
+                        text-align: center;
+                        margin-bottom: 3rem;
+                    }
+                    @include sm{
+                        font-size: 1rem;
+                    }
+                    text-align: right;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.container .contact {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .contact .wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+@media screen and (max-width: 1200px) {
+  .container .contact .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .contact .wrapper .form {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+}
+@media screen and (max-width: 576px) {
+  .container .contact .wrapper .form {
+    width: 100%;
+  }
+}
+.container .contact .wrapper .form .title {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.container .contact .wrapper .form .name {
+  margin-top: 1rem;
+}
+.container .contact .wrapper .form .field {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  border: 0;
+  outline: 0;
+  padding: 0.3rem 0.6rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: #DCAF6B;
+}
+.container .contact .wrapper .form textarea {
+  resize: none;
+  height: 150px;
+}
+.container .contact .wrapper .form input[type=submit] {
+  margin-top: 1rem;
+  color: #DCAF6B;
+  outline: #DCAF6B 2px solid;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  border: 0;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.container .contact .wrapper .form input[type=submit]:hover {
+  background-color: #DCAF6B;
+  color: black;
+}
+.container .contact .wrapper .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+}
+@media screen and (max-width: 1200px) {
+  .container .contact .wrapper .info {
+    margin-top: 3rem;
+    align-items: center;
+  }
+}
+.container .contact .wrapper .info img {
+  width: 400px;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 576px) {
+  .container .contact .wrapper .info img {
+    width: 200px;
+  }
+}
+.container .contact .wrapper .info .desc {
+  text-align: right;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 1200px) {
+  .container .contact .wrapper .info .desc {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container .contact .wrapper .info .desc {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

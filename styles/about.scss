@@ -1,0 +1,43 @@
+@import "colors.scss";
+@import "resp.scss";
+@import "mixins.scss";
+
+.container{
+    .about{
+        margin-top: 7rem;
+        @include center;
+        flex-direction: column;
+        padding: 3rem 0 4rem 0;
+        color: white;
+        background-color: rgba(0,0,0,0.5);
+
+        .title{
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+            @include sm{
+                font-size: 1.4rem;
+            }
+            text-align: center;
+        }
+        .description{
+            max-width: 70%;
+            @include sm{
+                font-size: .9rem;
+                max-width: 85%;
+            }
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            .thanks{
+                @include sm{
+                    font-size: 1.1rem;
+                }
+                color: $main;
+                margin-top: 2rem;
+                text-decoration: underline;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

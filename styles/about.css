@@ -1,0 +1,43 @@
+.container .about {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0 4rem 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container .about .title {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .container .about .title {
+    font-size: 1.4rem;
+  }
+}
+.container .about .description {
+  max-width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 576px) {
+  .container .about .description {
+    font-size: 0.9rem;
+    max-width: 85%;
+  }
+}
+.container .about .description .thanks {
+  color: #DCAF6B;
+  margin-top: 2rem;
+  text-decoration: underline;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 576px) {
+  .container .about .description .thanks {
+    font-size: 1.1rem;
+  }
+}/*# sourceMappingURL=about.css.map */

@@ -1,29 +1,28 @@
-
 body = document.body;
 burger = document.querySelector(".burger-menu");
-burgerBars = burger.querySelectors
-cross = document.querySelector(".cross");
 burger.addEventListener("click", toggleMenu);
-// cross.addEventListener("click", toggleMenu);
 sidebar = document.querySelector(".sidebar");
+
 
 function toggleMenu(){
     burger.style = "position: relative; z-index: 1;"
     if(sidebar.style.display == "" || sidebar.style.display == "none"){
         body.style.overflow = "hidden";
-        sidebar.style = "right: 0";
         sidebar.style.display = "flex";
-        console.log(burger.children)
         bars = Array.from(burger.children)
-        bars.forEach(bar => {
-            bar.style = "transform: rotate(140deg)";
-        });
-        
-        
+        index = 0;
+        for(let bar of bars){
+            if(!index) bar.style = "transform: translateY(7px) rotate(45deg)";
+            else if(index == 2) bar.style = "transform: translateY(-7px) rotate(45deg)";
+            else bar.style = "transform: rotate(135deg)";
+            index++;
+        }
     }
     else{
-        body.style.overflow = "overflow-x";
-        sidebar.style = "right: -500px";
+        body.style.overflow = "";
         sidebar.style.display = "none";
+        for(let bar of bars){
+            bar.style = "";
+        }
     }
 }
