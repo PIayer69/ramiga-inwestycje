@@ -48,19 +48,23 @@
                 color: $main;
             }
         }
-        .info{
+        a{
             @include center;
             background-color: $main;
-            color: black;
             width: 100%;
             height: 50px;
+            color: black;
             cursor: pointer;
             transition: .3s all ease;
+            text-decoration: none;
+
 
             &:hover{
                 background-color: rgba(0,0,0,0.5);
-                color: $main;
                 outline: 2px solid $main;
+            }
+            &:hover a{
+                color: $main;
             }
         }
 

@@ -54,19 +54,22 @@
 .investments .investment .name-address .address {
   color: #DCAF6B;
 }
-.investments .investment .info {
+.investments .investment a {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #DCAF6B;
-  color: black;
   width: 100%;
   height: 50px;
+  color: black;
   cursor: pointer;
   transition: 0.3s all ease;
+  text-decoration: none;
 }
-.investments .investment .info:hover {
+.investments .investment a:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  color: #DCAF6B;
   outline: 2px solid #DCAF6B;
+}
+.investments .investment a:hover a {
+  color: #DCAF6B;
 }/*# sourceMappingURL=invest.css.map */
