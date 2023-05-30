@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #333333;
+  background-image: url("../images/bg.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.container nav ul {
+  list-style: none;
+}
+.container nav ul li a {
+  color: white;
+  transition: 0.3s all ease;
+  text-decoration: none;
+}
+.container nav ul li a:hover {
+  text-decoration: underline;
+  color: #DCAF6B;
+}
+.container nav img {
+  width: 150px;
+}
+@media screen and (max-width: 576px) {
+  .container nav img {
+    width: 120px;
+  }
+}
+.container nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .container nav ul {
+    display: none;
+  }
+}
+.container nav ul li {
+  font-size: 1.1rem;
+  margin: 0 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .container nav ul li {
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+}
+.container nav .burger-menu {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 576px) {
+  .container nav .burger-menu {
+    display: block;
+  }
+}
+.container nav .burger-menu .bar {
+  background-color: white;
+  width: 23px;
+  height: 3px;
+  margin: 4px 0;
+}
+.container .sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.container .sidebar ul {
+  list-style: none;
+}
+.container .sidebar ul li a {
+  color: white;
+  transition: 0.3s all ease;
+  text-decoration: none;
+}
+.container .sidebar ul li a:hover {
+  text-decoration: underline;
+  color: #DCAF6B;
+}
+.container .sidebar .cross {
+  position: absolute;
+  top: 40px;
+  right: 65px;
+}
+.container .sidebar .cross .wrapper {
+  position: relative;
+  cursor: pointer;
+}
+.container .sidebar .cross .wrapper div {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+}
+.container .sidebar .cross .wrapper div:nth-child(1) {
+  transform: rotate(45deg);
+}
+.container .sidebar .cross .wrapper div:nth-child(2) {
+  transform: rotate(135deg);
+}
+.container .sidebar ul li {
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

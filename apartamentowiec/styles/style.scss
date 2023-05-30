@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "colors.scss";
+@import "resp.scss";
+@import "mixins.scss";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    background-color: $dark;
+    background-image: url("../images/bg.jpg");
+    background-position: center center;;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100%;
+    height: fit-content;
+
+    nav{
+        @include flex;
+        @include nav-links;
+        padding: 1rem 2rem;
+        img{
+            @include sm{
+                width: 120px;
+            }
+            width: 150px;
+        }
+        ul{
+            @include flex;
+            @include sm{
+                display: none;
+            }
+            li{
+                font-size: 1.1rem;
+                margin: 0 2.5rem;
+                @include md{
+                    font-size: 1rem;
+                    margin: 0 1rem;
+                }
+            }
+        }
+        .burger-menu{
+            display: none;
+            @include sm{
+                display: block;
+            }
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            .bar{
+                background-color: white;
+                width: 23px;
+                height: 3px;
+                margin: 4px 0;
+            }
+        }
+    }
+
+    .sidebar{
+        @include nav-links;
+        @include center;
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 1rem 0;
+        background-color: rgba(0,0,0,0.85);
+
+        .cross{
+            position: absolute;
+            top: 40px;
+            right: 65px;
+            .wrapper{
+                position: relative;
+                cursor: pointer;
+                div{
+                    width: 30px;
+                    height: 5px;
+                    background-color: white;
+                    position: absolute;
+                    &:nth-child(1){
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        transform: rotate(135deg);
+                    }
+                }
+            }
+        }
+
+        ul{
+            li{
+                font-size: 1.3rem;
+                padding: 1rem 2rem;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+

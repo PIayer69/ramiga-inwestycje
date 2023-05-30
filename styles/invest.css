@@ -1,5 +1,6 @@
 .investments {
   margin-top: 5rem;
+  padding-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +63,6 @@
   width: 100%;
   height: 50px;
   color: black;
-  cursor: pointer;
   transition: 0.3s all ease;
   text-decoration: none;
 }
@@ -70,6 +70,22 @@
   background-color: rgba(0, 0, 0, 0.5);
   outline: 2px solid #DCAF6B;
 }
-.investments .investment a:hover a {
+.investments .investment a:hover .info {
+  color: #DCAF6B;
+}
+.investments .investment .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DCAF6B;
+  width: 100%;
+  height: 50px;
+  color: black;
+  transition: 0.3s all ease;
+  text-decoration: none;
+}
+.investments .investment .info:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  outline: 2px solid #DCAF6B;
   color: #DCAF6B;
 }/*# sourceMappingURL=invest.css.map */
