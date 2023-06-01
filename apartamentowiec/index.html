@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/apartament.css">
     <title>Ramiga Inwestycje | Apartamentowiec</title>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/rzuty.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -47,7 +48,110 @@
             <div class="box" id="rzuty">
                 <span class="title">Rzuty</span>
                 <span class="content">
-                    <img src="images/Elewacja ogrodowa.jpg" alt="">
+                    <img src="images/Elewacja ogrodowa.jpg" id="img_container">
+                    <div class="options">
+                        <div class="option" id="floor">
+                            <div class="text">Wybierz kondygnacje</div>
+                            <div class="buttons" id="floor_btns">
+                                <span class="button" id="0">Parter</span>
+                                <span class="button" id="1">Piętro 1</span>
+                                <span class="button" id="2">Piętro 2</span>
+                            </div>
+                        </div>
+                        <div class="option hidden" id="flat">
+                            <div class="text">Wybierz mieszkanie</div>
+                            <div class="buttons hidden" id="1">
+                                <span class="button" id="1">M1</span>
+                                <span class="button" id="2">M2</span>
+                                <span class="button" id="3">M3</span>
+                                <span class="button" id="back">Powrót</span>
+                            </div>
+                            <div class="buttons hidden" id="2">
+                                <span class="button" id="4">M4</span>
+                                <span class="button" id="5">M5</span>
+                                <span class="button" id="6">M6</span>
+                                <span class="button" id="7">M7</span>
+                                <span class="button" id="back">Powrót</span>
+                            </div>
+                            <div class="buttons hidden" id="3">
+                                <span class="button" id="8">M8</span>
+                                <span class="button" id="9">M9</span>
+                                <span class="button" id="10">M10</span>
+                                <span class="button" id="11">M11</span>
+                                <span class="button" id="back">Powrót</span>
+                            </div>
+                        </div>
+                        <div class="info hidden">
+                            <span class="text">Mieszkanie: <span id="m_id">M1</span></span>
+                            <span class="desc hidden" id="1">Powierzchnia użytkowa: 42.10 m<sup>2</sup>.<br>
+                                Zestawienie pomieszczeń: hol: 7.51 m<sup>2</sup><br>
+                                Łazienka: 4.10 m<sup>2</sup><br>
+                                Pokój dzienny z aneksem kuchennym: 20.39 m<sup>2</sup><br>
+                                Pokój: 10.10 m<sup>2</sup>
+                            </span>
+                            <span class="desc hidden" id="2">Powierzchnia użytkowa: 42.10 m<sup>2</sup>.<br>
+                                Zestawienie pomieszczeń: hol: 7.51 m<sup>2</sup><br>
+                                Łazienka: 4.10 m<sup>2</sup><br>
+                                Pokój dzienny z aneksem kuchennym: 20.39 m<sup>2</sup><br>
+                                Pokój: 10.10 m<sup>2</sup>
+                            </span>
+                            <span class="desc hidden" id="3">Powierzchnia użytkowa: 39.02 m<sup>2</sup>.<br>
+                                Zestawienie pomieszczeń: hol: 5.38 m<sup>2</sup><br>
+                                Łazienka: 5.31 m<sup>2</sup><br>
+                                Pokój dzienny z aneksem kuchennym: 19.02 m<sup>2</sup><br>
+                                Pokój: 9.31 m<sup>2</sup>
+                            </span>
+                            <span class="desc hidden" id="4">Powierzchnia użytkowa: 38.80 m<sup>2</sup>.<br>
+                                Zestawienie pomieszczeń: hol: 5.26 m<sup>2</sup><br>
+                                Łazienka: 4.33 m<sup>2</sup><br>
+                                Pokój dzienny z aneksem kuchennym: 19.04 m<sup>2</sup><br>
+                                Pokój: 10.17 m<sup>2</sup>
+                            </span>
+                            <span class="desc hidden" id="5">Powierzchnia użytkowa: 41.86 m<sup>2</sup>.<br>
+                                Zestawienie pomieszczeń: hol: 7.51 m<sup>2</sup><br>
+                                Łazienka: 3.85 m<sup>2</sup><br>
+                                Pokój dzienny z aneksem kuchennym: 20.39 m<sup>2</sup><br>
+                                Pokój: 10.11 m<sup>2</sup>
+                            </span>
+                            <span class="desc hidden" id="6">Powierzchnia użytkowa: 41.86 m<sup>2</sup>.<br>
+                                Zestawienie pomieszczeń: hol: 7.51 m<sup>2</sup><br>
+                                Łazienka: 3.85 m<sup>2</sup><br>
+                                Pokój dzienny z aneksem kuchennym: 20.39 m<sup>2</sup><br>
+                                Pokój: 10.11 m<sup>2</sup>
+                            </span>
+                            <span class="desc hidden" id="7">Powierzchnia użytkowa: 38.80 m<sup>2</sup>.<br>
+                                Zestawienie pomieszczeń: hol: 5.26 m<sup>2</sup><br>
+                                Łazienka: 4.33 m<sup>2</sup><br>
+                                Pokój dzienny z aneksem kuchennym: 19.04 m<sup>2</sup><br>
+                                Pokój: 10.17 m<sup>2</sup>
+                            </span>
+                            <span class="desc hidden" id="8">Powierzchnia użytkowa: 38.53 m<sup>2</sup>.<br>
+                                Zestawienie pomieszczeń: hol: 5.26 m<sup>2</sup><br>
+                                Łazienka: 4.17 m<sup>2</sup><br>
+                                Pokój dzienny z aneksem kuchennym: 18.93 m<sup>2</sup><br>
+                                Pokój: 10.17 m<sup>2</sup>
+                            </span>
+                            <span class="desc hidden" id="9">Powierzchnia użytkowa: 41.44 m<sup>2</sup>.<br>
+                                Zestawienie pomieszczeń: hol: 7.51 m<sup>2</sup><br>
+                                Łazienka: 3.69 m<sup>2</sup><br>
+                                Pokój dzienny z aneksem kuchennym: 20.13 m<sup>2</sup><br>
+                                Pokój: 10.11 m<sup>2</sup>
+                            </span>
+                            <span class="desc hidden" id="10">Powierzchnia użytkowa: 41.44 m<sup>2</sup>.<br>
+                                Zestawienie pomieszczeń: hol: 7.51 m<sup>2</sup><br>
+                                Łazienka: 3.69 m<sup>2</sup><br>
+                                Pokój dzienny z aneksem kuchennym: 20.13 m<sup>2</sup><br>
+                                Pokój: 10.11 m<sup>2</sup>
+                            </span>
+                            <span class="desc hidden" id="11">Powierzchnia użytkowa: 38.53 m<sup>2</sup>.<br>
+                                Zestawienie pomieszczeń: hol: 5.26 m<sup>2</sup><br>
+                                Łazienka: 4.17 m<sup>2</sup><br>
+                                Pokój dzienny z aneksem kuchennym: 18.93 m<sup>2</sup><br>
+                                Pokój: 10.17 m<sup>2</sup>
+                            </span>
+                        </div>
+                    </div>
+                    
                 </span>
             </div>
             <div class="box">

@@ -23,6 +23,9 @@ html, body{
 }
 
 .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
     min-height: 100%;
     height: fit-content;
@@ -31,6 +34,8 @@ html, body{
         @include flex;
         @include nav-links;
         padding: 1rem 2rem;
+        max-width: 1500px;
+        width: 100%;
         img{
             @include sm{
                 width: 120px;

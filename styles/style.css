@@ -17,6 +17,9 @@ html, body {
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
   min-height: 100%;
   height: -moz-fit-content;
@@ -27,6 +30,8 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  max-width: 1500px;
+  width: 100%;
 }
 .container nav ul {
   list-style: none;

@@ -33,7 +33,7 @@
 @media screen and (max-width: 576px) {
   .investments .investment {
     width: 90%;
-    height: 450px;
+    height: 500px;
   }
 }
 .investments .investment img {
