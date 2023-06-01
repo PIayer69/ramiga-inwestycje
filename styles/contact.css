@@ -45,7 +45,11 @@
   padding: 0.3rem 0.6rem;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
+  transition: 0.1s all ease;
   color: #DCAF6B;
+}
+.container .contact .wrapper .form .field:focus {
+  outline: 1px solid #DCAF6B;
 }
 .container .contact .wrapper .form textarea {
   resize: none;

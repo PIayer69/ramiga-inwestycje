@@ -45,7 +45,12 @@
                     padding: .3rem .6rem;
                     background-color: rgba(0,0,0,0.7);
                     border-radius: 10px;
+                    transition: .1s all ease;
                     color: $main;
+
+                    &:focus{
+                        outline: 1px solid $main;
+                    }
                 }
 
                 textarea{

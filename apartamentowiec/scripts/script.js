@@ -2,7 +2,10 @@ body = document.body;
 burger = document.querySelector(".burger-menu");
 burger.addEventListener("click", toggleMenu);
 sidebar = document.querySelector(".sidebar");
-
+sidebarLinks = Array.from(sidebar.children[0].children);
+sidebarLinks.forEach(link => {
+    link.addEventListener("click", toggleMenu);
+})
 
 function toggleMenu(){
     burger.style = "position: relative; z-index: 1;"

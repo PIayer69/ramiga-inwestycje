@@ -2,6 +2,12 @@ body = document.body;
 burger = document.querySelector(".burger-menu");
 burger.addEventListener("click", toggleMenu);
 sidebar = document.querySelector(".sidebar");
+sidebarLinks = Array.from(sidebar.children[0].children);
+console.log(sidebar.children[0].children)
+sidebarLinks.forEach(link => {
+    console.log(link.innerText)
+    link.addEventListener("click", toggleMenu);
+})
 
 
 function toggleMenu(){
