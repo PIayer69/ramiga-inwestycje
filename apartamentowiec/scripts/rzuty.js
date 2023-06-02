@@ -44,14 +44,14 @@ flatButtons.forEach(btnSet => {
                 if(infoActive != null){
                     infoDivs[infoActive].classList.add("hidden");
                     infoOptions.classList.add("hidden");
-                    toggleSelected(infoActive);
+                    toggleClass(infoActive, "selected")
                     infoActive = null;
                 }
             }
             else{
                 if(infoActive != null){
                     infoDivs[infoActive].classList.add("hidden");
-                    toggleSelected(infoActive)
+                    toggleClass(infoActive, "selected")
                     buttonActive.classList.toggle("selected")
                 }
                 buttonActive = btn;
@@ -59,32 +59,21 @@ flatButtons.forEach(btnSet => {
                 infoOptions.classList.remove("hidden");
                 infoDivs[event.target.id-1].classList.remove("hidden");
                 infoActive = event.target.id - 1;
-                toggleSelected(infoActive)
+                toggleClass(infoActive, "selected")
                 flatIDContainer.innerHTML = infoActive + 1;
 
             }
         })
-        btn.addEventListener('mouseenter', event => {hover(event.target.id-1)})
-        btn.addEventListener('mouseleave', event => {hover(event.target.id-1)})
+        btn.addEventListener('mouseenter', event => {toggleClass(event.target.id-1, "hover")})
+        btn.addEventListener('mouseleave', event => {toggleClass(event.target.id-1, "hover")})
 
     })
 })
 
-function hover(id){
-    // id = 0 - 10
+function toggleClass(id, className){
     let l = [2, 0, 1, 3];
     offset = 0;
     if(id<3) offset = 1;
 
-    imageOverlays[l[(id+1)%4]].classList.toggle("hover");
+    imageOverlays[l[(id+1)%4]].classList.toggle(className);
 }
-
-function toggleSelected(id){
-    let l = [2, 0, 1, 3];
-    offset = 0;
-    if(id<3) offset = 1;
-
-    imageOverlays[l[(id+1)%4]].classList.toggle("selected");
-
-}
-
