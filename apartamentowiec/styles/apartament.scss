@@ -72,9 +72,36 @@
             .content{
                 @include center;
                 flex-direction: column;
-                img{
-                    max-width: 90%;
-                    border-radius: 20px;
+
+                .imageContainer{
+                    position: relative;
+                    width: fit-content;
+
+                    img{
+                        max-width: 100%;
+                        border-radius: 20px;
+                    }
+                    .overlay{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 7px;
+                        border-radius: 20px;
+                        display: grid;
+                        grid-template-columns: 0.9855fr 1fr;
+                        grid-template-rows: 0.915fr 1fr;
+                        overflow: hidden;
+
+                        .hover{
+                            transition: .3s all ease;
+                            background-color: rgba(0,0,0,0.2);
+                        }
+
+                        .selected{
+                            background-color: rgba($main, 0.3);
+                        }
+                    }
                 }
                 .options{
                     width: 100%;
@@ -116,6 +143,11 @@
                                     background-color: $main;
                                     color: black;
                                 }
+                            }
+
+                            .selected{
+                                background-color: $main;
+                                color: black;
                             }
                         }
                         .hidden{

@@ -85,9 +85,33 @@
   align-items: center;
   flex-direction: column;
 }
-.container .wrapper #rzuty .content img {
-  max-width: 90%;
+.container .wrapper #rzuty .content .imageContainer {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .wrapper #rzuty .content .imageContainer img {
+  max-width: 100%;
   border-radius: 20px;
+}
+.container .wrapper #rzuty .content .imageContainer .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 7px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 0.9855fr 1fr;
+  grid-template-rows: 0.915fr 1fr;
+  overflow: hidden;
+}
+.container .wrapper #rzuty .content .imageContainer .overlay .hover {
+  transition: 0.3s all ease;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.container .wrapper #rzuty .content .imageContainer .overlay .selected {
+  background-color: rgba(220, 175, 107, 0.3);
 }
 .container .wrapper #rzuty .content .options {
   width: 100%;
@@ -135,6 +159,10 @@
   }
 }
 .container .wrapper #rzuty .content .options .option .buttons .button:hover {
+  background-color: #DCAF6B;
+  color: black;
+}
+.container .wrapper #rzuty .content .options .option .buttons .selected {
   background-color: #DCAF6B;
   color: black;
 }
