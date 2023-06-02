@@ -45,6 +45,7 @@ flatButtons.forEach(btnSet => {
                     infoDivs[infoActive].classList.add("hidden");
                     infoOptions.classList.add("hidden");
                     toggleClass(infoActive, "selected")
+                    buttonActive.classList.toggle("selected")
                     infoActive = null;
                 }
             }
@@ -72,8 +73,5 @@ flatButtons.forEach(btnSet => {
 
 function toggleClass(id, className){
     let l = [2, 0, 1, 3];
-    offset = 0;
-    if(id<3) offset = 1;
-
     imageOverlays[l[(id+1)%4]].classList.toggle(className);
 }
