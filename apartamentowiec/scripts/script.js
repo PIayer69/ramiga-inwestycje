@@ -7,6 +7,16 @@ sidebarLinks.forEach(link => {
     link.addEventListener("click", toggleMenu);
 })
 
+arrowUp = document.querySelector(".arrowUp");
+document.addEventListener("scroll", event => {
+    if(window.scrollY > 400){
+        arrowUp.classList.remove("hidden");
+    }
+    else{
+        arrowUp.classList.add("hidden");
+    }
+})
+
 function toggleMenu(){
     burger.style = "position: relative; z-index: 1;"
     if(sidebar.style.display == "" || sidebar.style.display == "none"){

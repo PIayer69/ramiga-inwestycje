@@ -53,14 +53,9 @@
   font-weight: 300;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
-  .container .wrapper .box .content {
-    font-size: 0.9rem;
-  }
-}
 @media screen and (max-width: 576px) {
   .container .wrapper .box .content {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 .container .wrapper #galeria .content {
@@ -91,7 +86,9 @@
   width: fit-content;
 }
 .container .wrapper #rzuty .content .imageContainer img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 800px;
+  max-height: 550px;
   border-radius: 20px;
 }
 .container .wrapper #rzuty .content .imageContainer .overlay {
@@ -180,4 +177,134 @@
 }
 .container .wrapper #rzuty .content .options .info .desc {
   text-align: left;
+}
+.container .wrapper #kontaktTemp {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .wrapper #kontaktTemp .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+}
+@media screen and (max-width: 576px) {
+  .container .wrapper #kontaktTemp .form {
+    width: 100%;
+  }
+}
+.container .wrapper #kontaktTemp .form .title {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.container .wrapper #kontaktTemp .form .name {
+  margin-top: 1rem;
+}
+.container .wrapper #kontaktTemp .form .field {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  border: 0;
+  outline: 0;
+  padding: 0.3rem 0.6rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  transition: 0.1s all ease;
+  color: #DCAF6B;
+}
+.container .wrapper #kontaktTemp .form .field:focus {
+  outline: 1px solid #DCAF6B;
+}
+.container .wrapper #kontaktTemp .form textarea {
+  resize: none;
+  height: 150px;
+}
+.container .wrapper #kontaktTemp .form input[type=submit] {
+  margin-top: 1rem;
+  color: #DCAF6B;
+  outline: #DCAF6B 2px solid;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  border: 0;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.container .wrapper #kontaktTemp .form input[type=submit]:hover {
+  background-color: #DCAF6B;
+  color: black;
+}
+.container .wrapper #kontaktTemp .info img {
+  width: 400px;
+}
+.container .wrapper #kontaktTemp .info .desc {
+  text-align: right;
+}
+.container .wrapper #kontakt .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .wrapper #kontakt .info img {
+  width: 400px;
+}
+@media screen and (max-width: 768px) {
+  .container .wrapper #kontakt .info img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container .wrapper #kontakt .info img {
+    width: 200px;
+  }
+}
+.container .wrapper #kontakt .info .desc {
+  text-align: center;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 768px) {
+  .container .wrapper #kontakt .info .desc {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container .wrapper #kontakt .info .desc {
+    font-size: 1rem;
+  }
+}
+.container .wrapper #kontakt .info .desc a {
+  color: white;
+}
+.container .wrapper .hidden {
+  display: none;
+}
+.container .arrowUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #DCAF6B;
+  padding: 1rem;
+  border-radius: 50%;
+  opacity: 0.69;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.container .arrowUp img {
+  transform: rotate(-90deg);
+}
+.container .arrowUp:hover {
+  opacity: 0.9;
+}
+.container .hidden {
+  display: none;
 }/*# sourceMappingURL=apartament.css.map */

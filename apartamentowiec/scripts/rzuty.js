@@ -65,9 +65,10 @@ flatButtons.forEach(btnSet => {
 
             }
         })
-        btn.addEventListener('mouseenter', event => {toggleClass(event.target.id-1, "hover")})
-        btn.addEventListener('mouseleave', event => {toggleClass(event.target.id-1, "hover")})
-
+        if(btn.id != "back"){
+            btn.addEventListener('mouseenter', event => {toggleClass(event.target.id-1, "hover")})
+            btn.addEventListener('mouseleave', event => {toggleClass(event.target.id-1, "hover")})
+        }
     })
 })
 

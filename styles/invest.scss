@@ -47,9 +47,13 @@
             }
             .address{
                 color: $main;
+                a{
+                    color: $main;
+                    text-decoration: none;
+                }
             }
         }
-        a{
+        .btnInfo{
             @include center;
             background-color: $main;
             width: 100%;

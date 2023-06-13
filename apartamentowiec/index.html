@@ -11,7 +11,7 @@
     <script src="scripts/rzuty.js" defer></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="top">
         <nav>
             <a href="../index.html">
                 <img src="images/icon.png" alt="">
@@ -25,7 +25,8 @@
                 <li><a href="#opis">opis</a></li>
                 <li><a href="#galeria">galeria</a></li>
                 <li><a href="#rzuty">rzuty</a></li>
-                <li><a href="../contact.html">kontakt</a></li>
+                <li><a href="#kontakt">kontakt</a></li>
+                <!-- <li><a href="../contact.html">kontakt</a></li> -->
             </ul>
         </nav>
 
@@ -40,16 +41,16 @@
                     <img src="images/salon.jpg" alt="">
                     <img src="images/Jadalnia.jpg" alt="">
                     <img src="images/Kuchnia.jpg" alt="">
+                    <img src="images/Elewacja ogrodowa.jpg" alt="">
                     <img src="images/Elewacja boczna.jpg" alt="">
                     <img src="images/Elewacja frontowa.jpg" alt="">
-                    <img src="images/Elewacja ogrodowa.jpg" alt="">
                 </span>
             </div>
             <div class="box" id="rzuty">
                 <span class="title">Rzuty</span>
                 <span class="content">
                     <div class="imageContainer">
-                        <img src="images/Elewacja ogrodowa.jpg" id="img_container">
+                        <img src="images/Elewacja ogrodowa.jpg" loading="lazy" id="img_container">
                         <div class="overlay">
                             <div class="" id="2"></div>
                             <div class="" id="3"></div>
@@ -162,9 +163,36 @@
                     
                 </span>
             </div>
-            <div class="box">
-                <span class="title">Opis inwestycji</span>
-                <span class="content">Apartamentowiec przy bieszczadzkim trakcie to nowoczesny budynek wielorodzinny, charakteryzujący się eleganckim i stylowym wykończeniem elewacji. Zaprojektowano w nim 11 mieszkań, o różnej wielkości powierzchni użytkowej (pomiędzy 38.53 m<sup>2</sup>, a 42.10 m<sup>2</sup>) oraz dopasowanym do niej układzie funkcjonalnym. Wszystkie lokale są jasne i wygodne, z optymalnie wykorzystaną przestrzenią wewnętrzną, a duże hole ułatwiają komunikację. Do każdego apartamentu jest przyporządkowane miejsce postojowe.</span>
+            <div class="box hidden" id="kontaktTemp">
+                <div class="form">
+                    <span class="title">Napisz do nas</span>
+                    <span class="name">Temat</span>
+                    <input type="text" class="field" placeholder="Tytuł wiadomości"></input>
+                    <span class="name">Treść</span>
+                    <textarea type="text" class="field" placeholder="Treść wiadomości"></textarea>
+                    <input type="submit" value="Wyślij">
+                </div>
+                <div class="info">
+                    <img src="images/icon.png">
+                    <div class="desc">
+                        F. H. U. Ramiga sp. z o. o.<br>
+                        ul. Podmiejska 119 38-455 Głowienka<br>
+                        695 162 069 / 605 271 306<br>
+                        ramiga@wp.pl
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="kontakt">
+                <div class="info">
+                    <img src="images/icon.png">
+                    <div class="desc">
+                        F. H. U. Ramiga sp. z o. o.<br>
+                        ul. Podmiejska 119 38-455 Głowienka<br>
+                        <a href="tel:+48 695 162 069">695 162 069</a> / <a href="tel:+48 605 271 306">605 271 306</a><br>
+                        <a href="mailto:ramiga@wp.pl">ramiga@wp.pl</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -173,9 +201,13 @@
                 <li><a href="#opis">opis</a></li>
                 <li><a href="#galeria">galeria</a></li>
                 <li><a href="#rzuty">rzuty</a></li>
-                <li><a href="../contact.html">kontakt</a></li>
+                <li><a href="#kontakt">kontakt</a></li>
+                <!-- <li><a href="../contact.html">kontakt</a></li> -->
             </ul>
         </div>
+        <a href="#top" class="arrowUp hidden">
+            <img src="images/arrow.svg" alt="">
+        </a>
     </div>
 </body>
 </html>

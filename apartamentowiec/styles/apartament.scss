@@ -2,8 +2,6 @@
 @import "colors.scss";
 @import "resp.scss";
 
-
-
 .container{
     .wrapper{
         @include center;
@@ -40,17 +38,15 @@
                 margin-bottom: 1rem;
             }
             .content{
-                @include md{
-                    font-size: .9rem;
-                }
                 @include sm{
-                    font-size: .8rem;
+                    font-size: 1rem;
                 }
                 font-size: 1.1rem;
                 font-weight: 300;
                 text-align: center;
             }
         }
+
         #galeria{
             .content{
                 display: flex;
@@ -78,7 +74,9 @@
                     width: fit-content;
 
                     img{
-                        max-width: 100%;
+                        width: 100%;
+                        max-width: 800px;
+                        max-height: 550px;
                         border-radius: 20px;
                     }
                     .overlay{
@@ -170,5 +168,141 @@
                 }
             }
         }
+
+        #kontaktTemp{
+            // display: none;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: white;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                @include sm{
+                    width: 100%;
+                }
+
+                width: 500px;
+
+                .title{
+                    font-size: 1.8rem;
+                    text-decoration: underline;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+
+                .name{
+                    margin-top: 1rem;
+                }
+
+                .field{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: .9rem;
+                    border: 0;
+                    outline: 0;
+                    padding: .3rem .6rem;
+                    background-color: rgba(0,0,0,0.7);
+                    border-radius: 10px;
+                    transition: .1s all ease;
+                    color: $main;
+
+                    &:focus{
+                        outline: 1px solid $main;
+                    }
+                }
+
+                textarea{
+                    resize: none;
+                    height: 150px;
+                }
+
+                input[type="submit"]{
+                    margin-top: 1rem;
+                    color: $main;
+                    outline: $main 2px solid;
+                    padding: .6rem 1.8rem;
+                    border-radius: 10px;
+                    background-color: rgba(0,0,0,0.6);
+                    font-weight: 600;
+                    border: 0;
+                    transition: .3s all ease;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: $main;
+                        color: black;
+                    }
+                }
+            }
+            .info{
+                img{
+                    width: 400px;
+                }
+                .desc{
+                    text-align: right;
+                }
+            }
+        }
+
+        #kontakt{
+            .info{
+                @include center;
+                flex-direction: column;
+                img{
+                    @include md{
+                        width: 300px;
+                    }
+                    @include sm{
+                        width: 200px;
+                    }
+                    width: 400px;
+                }
+                .desc{
+                    @include md{
+                        font-size: 1.2rem;
+                    }
+                    @include sm{
+                        font-size: 1rem;
+                    }
+                    text-align: center;
+                    font-size: 1.4rem;
+
+                    a{
+                        // text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .hidden{
+            display: none;
+        }
+
+    }
+    .arrowUp{
+        @include center;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background-color: $main;
+        padding: 1rem;
+        border-radius: 50%;
+        opacity: .69;
+        transition: .3s all ease;
+        cursor: pointer;
+        img{
+            transform: rotate(-90deg);
+        }
+        &:hover{
+            opacity: .9;
+        }
+    }
+    .hidden{
+        display: none;
     }
 }
